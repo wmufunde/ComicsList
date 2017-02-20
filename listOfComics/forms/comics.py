@@ -1,11 +1,10 @@
 from django.forms import ModelForm
 from django.forms.models import inlineformset_factory
-from listOfComics.models import Comics
+from listOfComics.models import Comic
 
 
 class ComicsForm(ModelForm):
     class Meta:
-        model = Comics
-        fields = ['title', 'publisher', 'issue', 'writer_artist', 'releaseDate']
-        
- #       ComicsFormSet = inlineformset_factory(Comics, form=ComicsForm, extra=1)
+        model = Comic
+        fields = ['title', 'cover', 'publisher', 'issue', 'writer_artist', 'releaseDate']
+

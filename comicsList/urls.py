@@ -24,5 +24,5 @@ urlpatterns = [
     url('^accounts/', include('django.contrib.auth.urls')),
     url(r'^listOfComics/', include('listOfComics.urls', namespace='listOfComics'))
     #url(r'^$/', 'main.views.home')
-] #+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

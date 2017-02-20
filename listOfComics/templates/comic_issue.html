@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block content %}
+
+
+<h1> {{comic.title}}, {{comic.issue}}</h1>
+
+<p> writers and artists: {{comic.writer_artist}} </p>
+<p> publisher {{comic.publisher}}</p>
+<p>release date {{ comic.releaseDate}} </p>
+<p> {% if object.cover %}
+<img src={{ object.cover.url }} />
+{% endif %}</p>
+
+
+
+
+{% endblock %}

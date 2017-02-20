@@ -14,7 +14,7 @@ from django.core.wsgi import get_wsgi_application
 from django.core.wsgi import get_wsgi_application
 from whitenoise.django import DjangoWhiteNoise
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "comicsList.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "comicsList.production")
 
 application = get_wsgi_application()
 
