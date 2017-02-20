@@ -1,5 +1,18 @@
-dj-database-url==0.4.2
-Django==1.10.2
-gunicorn==19.6.0
-wheel==0.26.0
-whitenoise==3.3.0
+django
+
+# Configuration
+django-environ
+django-secure
+whitenoise
+
+# Images
+Pillow
+
+# Python-PostgreSQL Database Adapter
+psycopg2
+
+# WSGI Handler
+# ------------------------------------------------
+gevent
+gunicorn
+
