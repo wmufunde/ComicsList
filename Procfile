@@ -1,1 +1,1 @@
-web gunicorn comicsList.wsgi --log-file
+web gunicorn comicsList.wsgi:application
