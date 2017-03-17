@@ -21,7 +21,7 @@ class ComicsView(FormView):
         
         return HttpResponseRedirect(self.success_url)
     
-@login_required
+#@login_required
 def my_list(request, template='my_list.html'):
     comics = Comic.objects.all()
     context = {

@@ -4,7 +4,35 @@
 
 {% block content %}
 
-<h1>Home Page</h1>
 
+
+  <header id="home">
+    <div id="home-slider" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="item active" id ="pic1">
+          <div class="caption">
+            <h1 class="animated fadeInLeftBig">Welcome to <span>SUPER Reads</span></h1>
+            <p class="animated fadeInRightBig">The Home of Combic Books</p>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="{% url 'listOfComics:my_list' %}">Start now</a>
+          </div>
+        </div>
+        <div class="item" id="pic2">
+          <div class="caption">
+            <h1 class="animated fadeInLeftBig">Say Hello to <span>Super Reads</span></h1>
+            <p class="animated fadeInRightBig">We remember all your comic books so you don't have to</p>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="{% url 'listOfComics:my_list' %}">Start now</a>
+          </div>
+        </div>
+      
+      </div>
+      <a class="left-control" href="#home-slider" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+      <a class="right-control" href="#home-slider" data-slide="next"><i class="fa fa-angle-right"></i></a>
+
+
+    </div>
+
+
+    </header>
+        
 
 {% endblock %}

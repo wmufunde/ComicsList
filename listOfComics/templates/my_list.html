@@ -7,17 +7,18 @@
    
     
        <h1>My List</h1>
-       
-   
-      
-
-
+    <div>
+        <h2> <a href="{% url 'listOfComics:comics_signup' %}" class="btn btn-lg btn-primary">Add New Comic</a> 
+        </h2>
+    </div>
+          
+  
    <div class="row">
    
    {% for comic in comics %}
   <div class="col-sm-6 col-md-3">
     <div class="thumbnail">
-      <img src="{{  comic.cover.url }}" alt="cover">
+        <a href="{% url 'listOfComics:issue_profile' comic.id %}"><img src="{{  comic.cover.url }}" alt="cover"></a>
       <div class="caption">
         <h3>{{comic.title}}</h3>
         
